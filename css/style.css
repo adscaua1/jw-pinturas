@@ -1,0 +1,337 @@
+/* =====================
+   VARIÁVEIS DE CORES
+===================== */
+:root {
+    --azul: #1f3c88;
+    --azul-claro: #3a6edc;
+    --laranja: #ff8c42;
+    --verde: #25d366;
+    --cinza-bg: #f2f4f8;
+    --cinza-card: #ffffff;
+    --texto: #333;
+}
+
+/* =====================
+   RESET
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: var(--cinza-bg);
+    color: var(--texto);
+}
+
+/* =====================
+   BOTÕES FLUTUANTES
+===================== */
+.whatsapp, .instagram {
+    position: fixed;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.whatsapp {
+    bottom: 20px;
+    background: var(--verde);
+}
+
+.instagram {
+    bottom: 85px;
+    background: #c13584;
+}
+
+.whatsapp:hover,
+.instagram:hover {
+    transform: scale(1.1);
+}
+
+/* =====================
+   ORÇAMENTO / HERO
+===================== */
+.orcamento {
+    background: var(--azul);
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.orcamento h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.orcamento p {
+    margin-bottom: 30px;
+}
+
+.orcamento form {
+    background: #fff;
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.orcamento input,
+.orcamento select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.orcamento button {
+    width: 100%;
+    padding: 14px;
+    background: var(--laranja);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.orcamento button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* =====================
+   SEÇÕES
+===================== */
+section {
+    padding: 80px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: var(--azul);
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--laranja);
+    margin: 12px auto 0;
+    border-radius: 3px;
+}
+
+/* =====================
+   PROJETOS
+===================== */
+.projetos {
+    background: #fff;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.galeria img {
+    width: 100%;
+    height: 220px;              /* PADRÃO DE ALTURA */
+    object-fit: cover;          /* CORTA SEM DISTORCER */
+    border-radius: 12px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: transform 0.4s, box-shadow 0.4s, border-color 0.4s;
+}
+
+.galeria img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    border-color: var(--laranja);
+}
+
+
+/* =====================
+   SERVIÇOS
+===================== */
+.servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    position: relative;
+    background: var(--cinza-card);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    background: var(--azul);
+    border-radius: 15px 15px 0 0;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: var(--azul);
+    margin-bottom: 10px;
+}
+
+/* =====================
+   DIFERENCIAIS
+===================== */
+.diferenciais ul {
+    max-width: 800px;
+    margin: auto;
+    list-style: none;
+}
+
+.diferenciais li {
+    background: #fff;
+    padding: 18px 25px;
+    margin-bottom: 15px;
+    border-left: 6px solid var(--laranja);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* =====================
+   CONTATO
+===================== */
+.contato {
+    background: var(--azul);
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contato h2 {
+    color: #fff;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    background: var(--azul);
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+
+.depoimentos {
+    background: #fff;
+}
+
+.depoimentos-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.depoimento {
+    background: var(--cinza-card);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.depoimento span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--azul);
+}
+
+.cta {
+    background: var(--azul);
+    color: #fff;
+    text-align: center;
+}
+
+.cta h2 {
+    color: #fff;
+}
+
+.btn-cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 35px;
+    background: var(--laranja);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.btn-cta:hover {
+    transform: scale(1.05);
+}
+
+
+.como-funciona {
+    background: var(--cinza-bg);
+}
+
+.passos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.passo i {
+    font-size: 40px;
+    color: var(--laranja);
+    margin-bottom: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.instagram {
+    background: #c13584;
+}

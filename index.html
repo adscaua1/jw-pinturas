@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J&W Pinturas</title>
+
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+   <link rel="icon" href="./img/WhatsApp Image 2025-12-15 at 20.54.06.jpeg">
+
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- BOTÕES FLUTUANTES -->
+    <a href="https://wa.me/12988070269?text=Ol%C3%A1%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!"
+        class="whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <a href="https://www.instagram.com/j.e.w_pinturas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        class="instagram" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <header>
+
+        <!-- ORÇAMENTO NO INÍCIO -->
+        <section class="orcamento">
+            <h1>J&W Pinturas</h1>
+            <p>Solicite seu orçamento sem compromisso!</p>
+
+            <form onsubmit="enviarWhatsApp(event)">
+                <input type="text" id="nome" placeholder="Seu nome" required>
+                <input type="tel" id="whats" placeholder="WhatsApp" required>
+
+                <select id="servico" required>
+                    <option value="">Tipo de serviço</option>
+                    <option>Impermeabilização</option>
+                    <option>Gesso e Estuque</option>
+                    <option>Pintura de Edifícios</option>
+                    <option>Revestimentos e Resinas</option>
+                    <option>Acabamentos em Geral</option>
+                    <option>Alvenaria</option>
+                    <option>Outro</option>
+                </select>
+
+                <button type="submit">Solicitar Orçamento</button>
+            </form>
+
+        </section>
+
+        <!-- PROJETOS -->
+        <section class="projetos">
+            <h2>Projetos Realizados</h2>
+            <div class="galeria">
+                <img src="./img/edificios.jpeg" alt="Projeto 1">
+                <img src="./img/gesso.jpg" alt="Projeto 2">
+                <img src="./img/ipermeabilização.jpg" alt="Projeto 3">
+                <img src="./img/resinas.jpg" alt="Projeto 4">
+            </div>
+        </section>
+
+        <section class="depoimentos">
+            <h2>O que nossos clientes dizem</h2>
+
+            <div class="depoimentos-box">
+                <div class="depoimento">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>“Serviço excelente, muito capricho e organização. Recomendo!”</p>
+                    <span>– Carlos M.</span>
+                </div>
+
+                <div class="depoimento">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>“Cumpriram o prazo e o acabamento ficou perfeito.”</p>
+                    <span>– Ana Paula</span>
+                </div>
+
+                <div class="depoimento">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>“Equipe profissional e preço justo. Ficou ótimo!”</p>
+                    <span>– João Silva</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SERVIÇOS -->
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="servicos">
+                <div class="card">
+                    <h3>Impermeabilização</h3>
+                    <p>Soluções completas contra infiltrações e umidade, aumentando a durabilidade e segurança da obra.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Gesso e Estuque</h3>
+                    <p>Forros, sancas, molduras e acabamentos em gesso com alto padrão estético.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Pintura de Edifícios</h3>
+                    <p>Pintura interna e externa com acabamento profissional e excelente durabilidade.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Revestimentos e Resinas</h3>
+                    <p>Aplicação de revestimentos e resinas para áreas internas e externas.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Acabamentos em Geral</h3>
+                    <p>Serviços completos de acabamento para valorizar e finalizar sua construção.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Alvenaria</h3>
+                    <p>Construção e reformas em alvenaria com qualidade, segurança e precisão.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Gostou do nosso trabalho?</h2>
+            <p>Solicite agora seu orçamento pelo WhatsApp, é rápido e sem compromisso.</p>
+
+            <a href="https://wa.me/12988070269?text=Ol%C3%A1%20gostaria%20de%20um%20or%C3%A7amento!" target="_blank"
+                class="btn-cta">
+                Solicitar Orçamento
+            </a>
+        </section>
+
+        <section class="como-funciona">
+            <h2>Como funciona nosso serviço</h2>
+
+            <div class="passos">
+                <div class="passo">
+                    <i class="fas fa-comments"></i>
+                    <p>Você entra em contato</p>
+                </div>
+
+                <div class="passo">
+                    <i class="fas fa-home"></i>
+                    <p>Avaliamos o local</p>
+                </div>
+
+                <div class="passo">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <p>Enviamos o orçamento</p>
+                </div>
+
+                <div class="passo">
+                    <i class="fas fa-paint-roller"></i>
+                    <p>Executamos o serviço</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- DIFERENCIAIS -->
+        <section id="diferenciais" class="diferenciais">
+            <h2>Nossos Diferenciais</h2>
+            <ul>
+                <li>Profissionais experientes e qualificados</li>
+                <li>Compromisso com prazos e organização</li>
+                <li>Materiais de alta qualidade</li>
+                <li>Atendimento personalizado</li>
+                <li>Acabamento limpo e detalhado</li>
+            </ul>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato para conhecer melhor nosso trabalho.</p>
+            <p><strong>Telefone / WhatsApp:</strong> (11) 95944-3477</p>
+            <p><strong>Email:</strong> contato@jwpinturas.com.br</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 JW Pinturas. Todos os direitos reservados.</p>
+        </footer>
+
+    </header>
+
+    <script>
+        function enviarWhatsApp(e) {
+            e.preventDefault();
+
+            const nome = document.getElementById("nome").value;
+            const whats = document.getElementById("whats").value;
+            const servico = document.getElementById("servico").value;
+
+            const mensagem = `Olá, me chamo ${nome}. Gostaria de um orçamento para ${servico}.`;
+
+            const url = `https://wa.me/12988070269?text=${encodeURIComponent(mensagem)}`;
+            window.open(url, "_blank");
+        }
+    </script>
+
+
+</body>
+
+</html>
